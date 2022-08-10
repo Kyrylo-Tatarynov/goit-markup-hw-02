@@ -1,0 +1,116 @@
+:root {
+    --main-text-color: #757575;
+    --tittle-text-color: #212121;
+    --accent-color: #2196F3;
+    --secondary-text-color: #ffffff;
+
+    --main-bg-color: #ffffff;
+    --secondary-bg-color: #F5F4FA;
+    --accent-bg-color: #2F303A;
+}
+
+/* ------------------------------------- */
+/*               CSS BODY                */
+/* ------------------------------------- */
+body {
+    font-family: Robot, sans-serif;
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+    position: relative;
+    width: 1600px;
+    height: 2349px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+}
+
+/* ------------------------------------- */
+/*              CSS HEADER               */
+/* ------------------------------------- */
+.navigation .link {
+    color: var(--tittle-text-color)
+}
+.link:hover, .link:focus {
+    color: var(--accent-color);
+}
+.link.logo {
+    color: var(--accent-color)
+}
+.main-contacts .contact {
+    color: inherit;
+}
+.contact:hover,
+.contact:focus {
+    color: var(--accent-color);
+}
+
+/* ------------------------------------- */
+/*               CSS MAIN                */          
+/* ------------------------------------- */
+
+/* ---FIRST PART--- */
+.first-part {
+    background-color: var(--accent-bg-color);
+    color: var(--secondary-text-color);
+}
+.first-part .title {
+    text-transform: uppercase;
+}
+.first-part .button {
+    color: inherit;
+    border: 0;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.first-part .button:hover, .first-part .button:focus {
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+/* ---SECOND PART--- */
+.second-part{
+
+}
+.second-part .subtitle {
+    color: var(--tittle-text-color);
+}
+.second-part .text.fist {}
+
+/* ---THIRD PART--- */
+.third-part {
+
+}
+.third-part .title {
+    color: var(--tittle-text-color);
+}
+.third-part .img {
+}
+.third-part .img.first {}
+.third-part .img.second {}
+.third-part .img.third {}
+
+/* ---FOURTH PART--- */
+
+
+/* ------------------------------------- */
+/*              CSS FOOTER               */
+/* ------------------------------------- */
+footer a {
+    color:var(--secondary-text-color);
+    background-color: var(--accent-bg-color);
+}
+
+.contact {
+    color: rgb(255, 255, 255, 0.6);
+}
