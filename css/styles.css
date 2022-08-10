@@ -1,24 +1,23 @@
 :root {
     --main-text-color: #757575;
     --tittle-text-color: #212121;
-    --accent-color: #2196F3;
+    --accent-text-color: #2196F3;
     --secondary-text-color: #ffffff;
 
     --main-bg-color: #ffffff;
     --secondary-bg-color: #F5F4FA;
     --accent-bg-color: #2F303A;
+    --accent-bg-blue-color: #2196F3;
 }
 
 /* ------------------------------------- */
-/*               CSS BODY                */
+/*               STYLES BODY                */
 /* ------------------------------------- */
 body {
-    font-family: Robot, sans-serif;
     color: var(--main-text-color);
     background-color: var(--main-bg-color);
-    position: relative;
-    width: 1600px;
-    height: 2349px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
 }
 
 ul {
@@ -31,86 +30,171 @@ a {
 
 button {
     font-family: inherit;
+    cursor: pointer;
 }
 
 /* ------------------------------------- */
-/*              CSS HEADER               */
+/*              STYLES HEADER               */
 /* ------------------------------------- */
-.navigation .link {
-    color: var(--tittle-text-color)
+.logo {
+    color: var(--tittle-text-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
 }
-.link:hover, .link:focus {
-    color: var(--accent-color);
+.logo-web {
+    color: var(--accent-text-color)
 }
-.link.logo {
-    color: var(--accent-color)
+.navigation-list .link {
+    color: var(--tittle-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
-.main-contacts .contact {
+.header-contacts .contact {
     color: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
-.contact:hover,
-.contact:focus {
-    color: var(--accent-color);
+.navigation-list .link:focus,
+.navigation-list .link:hover,
+.header-contacts .contact:hover,
+.header-contacts .contact:focus {
+    color: var(--accent-text-color);
 }
 
 /* ------------------------------------- */
-/*               CSS MAIN                */          
+/*              STYLES MAIN              */          
 /* ------------------------------------- */
 
 /* ---FIRST PART--- */
 .first-part {
     background-color: var(--accent-bg-color);
     color: var(--secondary-text-color);
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 .first-part .title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
     text-transform: uppercase;
 }
 .first-part .button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.85;
     color: inherit;
     border: 0;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    background:var(--accent-bg-blue-color);
 }
 .first-part .button:hover, .first-part .button:focus {
     background: #188CE8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
 }
 
 /* ---SECOND PART--- */
-.second-part{
-
-}
 .second-part .subtitle {
     color: var(--tittle-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
 }
-.second-part .text.fist {}
+.second-part .text {
+    font-size: 14px;
+    line-height: 1.71;
+}
 
 /* ---THIRD PART--- */
-.third-part {
-
-}
 .third-part .title {
     color: var(--tittle-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
 }
-.third-part .img {
-}
-.third-part .img.first {}
-.third-part .img.second {}
-.third-part .img.third {}
 
 /* ---FOURTH PART--- */
-
-
-/* ------------------------------------- */
-/*              CSS FOOTER               */
-/* ------------------------------------- */
-footer a {
-    color:var(--secondary-text-color);
-    background-color: var(--accent-bg-color);
+.fourth-part {
+    background-color: var(--secondary-bg-color)
+}
+.fourth-part .title {
+    color: var(--tittle-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+}
+.fourth-part .item {
+    background-color: var(--main-bg-color);
+    font-size: 16px;
+    line-height: 1.18;
+}
+.fourth-part .name{
+    color: var(--tittle-text-color);
+    font-weight: 500;
 }
 
-.contact {
-    color: rgb(255, 255, 255, 0.6);
+/* ------------------------------------- */
+/*              STYLES FOOTER            */
+/* ------------------------------------- */
+
+footer {
+    background-color: var(--accent-bg-color);
+}
+footer .logo.link {
+    color: var(--secondary-text-color);
+}
+.footer-contacts {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.footer-contacts .address {
+    color: var(--secondary-text-color);
+}
+.footer-contacts .contact{
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-contacts .contact:hover, .footer-contacts .address:hover,
+.footer-contacts .contact:focus, .footer-contacts .address:focus {
+    color: var(--accent-text-color);
+}
+
+/* ------------------------------------- */
+/*      ---- STYLES PORTFOLIO ----       */
+/* ------------------------------------- */
+
+/* ------------------------------------- */
+/*              STYLES MAIN              */
+/* ------------------------------------- */
+
+.portfolio-buttons .button{
+    color: var(--tittle-text-color);
+    background-color: var(--secondary-bg-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    border: 0;
+}
+.portfolio-buttons .button:hover,
+.portfolio-buttons .button:focus {
+    color: var(--secondary-text-color);
+    background-color: var(--accent-bg-blue-color);
+}
+.portfolio-element {
+    background-color: #EEEEEE;
+}
+.portfolio-element .title {
+    color: var(--tittle-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.portfolio-element .text {
+    color: var(--main-text-color);
+    font-size: 16px;
+    line-height: 1.87;
 }
