@@ -11,7 +11,7 @@
 }
 
 /* ------------------------------------- */
-/*               STYLES BODY                */
+/*               STYLES BODY             */
 /* ------------------------------------- */
 body {
     color: var(--main-text-color);
@@ -29,9 +29,20 @@ button {
     font-family: inherit;
     cursor: pointer;
 }
-
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 /* ------------------------------------- */
-/*              STYLES HEADER               */
+/*             STYLES HEADER             */
 /* ------------------------------------- */
 .logo {
     color: var(--tittle-text-color);
@@ -179,9 +190,6 @@ footer .logo.link {
 .portfolio-buttons .button:focus {
     color: var(--secondary-text-color);
     background-color: var(--accent-bg-blue-color);
-}
-.portfolio-element {
-    background-color: #EEEEEE;
 }
 .portfolio-element .title {
     color: var(--tittle-text-color);
